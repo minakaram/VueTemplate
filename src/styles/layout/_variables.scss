@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+P {
+  margin-bottom: 0 !important;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  font-size: 16px;
+}
+
+
+// rubik
+@font-face {
+  font-family: rubik-regular;
+  src: url(@/fonts/Rubik/static/Rubik-Regular.ttf);
+}
+
+@font-face {
+  font-family: rubik-medium;
+  src: url(@/fonts/Rubik/static/Rubik-Medium.ttf);
+}
+
+@font-face {
+  font-family: rubik-semiBold;
+  src: url(@/fonts/Rubik/static/Rubik-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: rubik-bold;
+  src: url(@/fonts/Rubik/static/Rubik-Bold.ttf);
+}
+
+@font-face {
+  font-family: rubik-extrabold;
+  src: url(@/fonts/Rubik/static/Rubik-ExtraBold.ttf);
+}
+
+
+// inter
+@font-face {
+  font-family: inter-regular;
+  src: url(@/fonts/Inter/static/Inter_18pt-Regular.ttf);
+}
+
+@font-face {
+  font-family: inter-medium;
+  src: url(@/fonts/Inter/static/Inter_18pt-Medium.ttf);
+}
+
+@font-face {
+  font-family: inter-semiBold;
+  src: url(@/fonts/Inter/static/Inter_18pt-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: inter-bold;
+  src: url(@/fonts/Inter/static/Inter_18pt-Bold.ttf);
+}
+
+@font-face {
+  font-family: inter-extraBold;
+  src: url(@/fonts/Inter/static/Inter_18pt-ExtraBold.ttf);
+}
+
+
+
+// media queries
+
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin customScreen {
+  @media (min-width: 1025px) and (max-width: 1135px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mobileXS {
+  @media (max-width: 420px) {
+    @content;
+  }
+}
+
+//roots
+:root {
+  --main-black: #020302;
+  --primary-color: #B18D43;
+  --main-white: #FFFFFF;
+  --black-gray: #4B4E4C;
+}
